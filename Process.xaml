@@ -132,7 +132,7 @@
         <InArgument x:TypeArguments="x:String" x:Key="in_TaxID">[TaxID]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_ReportPath">[YearlyReportPath]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_Year">[ReportYear]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="out_UploadID">[UploadID]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_UploadID">[UploadID]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke System1_NavigateTo_Dashboard workflow" sap:VirtualizedContainerService.HintSize="314.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="System1\System1_NavigateTo_Dashboard.xaml">
@@ -149,7 +149,7 @@
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke System1_UpdateWorkItem workflow" sap:VirtualizedContainerService.HintSize="314.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="System1\System1_UpdateWorkItem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_Status">Completed</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_HashResult">["Uploaded with ID"+UploadID]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_HashResult">[UploadID]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke System1_NavigateTo_Dashboard workflow" sap:VirtualizedContainerService.HintSize="314.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="System1\System1_NavigateTo_Dashboard.xaml">
